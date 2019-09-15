@@ -404,6 +404,15 @@
     <ctl name="PRI_MI2S_RX_Voice Mixer Voip" value="0" />
     <ctl name="PRI_MI2S_RX_DL_HL Switch" value="0" />
 
+    <!-- Xiaomi mixer_paths_overlay_static begins -->
+    <ctl name="PRIM_MI2S_RX SampleRate" value="KHZ_48" />
+    <ctl name="PRIM_MI2S_RX Channels" value="One" />
+    <ctl name="PRIM_MI2S_RX Format" value="S24_LE" />
+    <ctl name="PRIM_MI2S_TX SampleRate" value="KHZ_48" />
+    <ctl name="PRIM_MI2S_TX Channels" value="One" />
+    <ctl name="PRIM_MI2S_TX Format" value="S24_LE" />
+    <!-- Xiaomi mixer_paths_overlay_static ends -->
+
     <path name="deep-buffer-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -2281,7 +2290,7 @@
     </path>
 
     <path name="speaker-mic">
-        <path name="dmic1" />
+        <path name="amic1" />
     </path>
 
     <path name="speaker-protected">
@@ -2333,7 +2342,18 @@
     </path>
 
     <path name="handset-mic">
-        <path name="dmic3" />
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC0" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="ADC2" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="ADC2 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="6" />
     </path>
 
     <path name="headphones">
