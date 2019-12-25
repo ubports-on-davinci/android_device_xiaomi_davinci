@@ -49,6 +49,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
 # Camera
+TARGET_USES_MOTOR := true
+
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
