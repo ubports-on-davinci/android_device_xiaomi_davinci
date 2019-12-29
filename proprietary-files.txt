@@ -30,6 +30,7 @@ vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 
 # Audio
+vendor/bin/audioshell_service
 vendor/lib64/hw/audio.primary.sm6150.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
