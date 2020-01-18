@@ -2,7 +2,6 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hifi=false \
     ro.config.vc_call_vol_steps=11 \
-    ro.vendor.audio.hifi=true \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.us.proximity=false
 
